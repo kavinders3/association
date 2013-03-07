@@ -1,0 +1,3 @@
+class Acc < ActiveRecord::Base
+  attr_accessible :account_number
+end

@@ -1,0 +1,10 @@
+<%= form_for(@cust) do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %><br/>
+  <%= f.label :address %>
+  <%= f.text_field :address %><br/>
+ <%= collection_select(:cust,:order_id, Order.all ,:id, :name) %>
+  <%= f .submit %>
+
+<% end %>

@@ -1,0 +1,4 @@
+class Cust < ActiveRecord::Base
+  attr_accessible :address, :name
+  has_one :orders, :dependent => :destroy
+end

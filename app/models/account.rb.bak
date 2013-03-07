@@ -1,0 +1,4 @@
+class Account < ActiveRecord::Base
+  attr_accessible :account_number, :name
+  belongs_to :customer
+end

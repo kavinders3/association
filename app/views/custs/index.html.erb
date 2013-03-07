@@ -1,0 +1,15 @@
+<h1> welcomes </h1>
+</table>
+<tr>
+<th>name</th>
+<th>address</th>
+</tr><br/>
+<% @cust.each do |cust| %>
+<tr>
+<td><%= cust.name %> </td>
+<td><%= cust.address %> </td><br/>
+</tr>
+<% end %>
+</table>
+<br/>
+<%= link_to 'new', new_cust_path %>

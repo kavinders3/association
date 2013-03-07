@@ -1,0 +1,16 @@
+<%= form_for(@order) do |f| %>
+<%= f.label :item %>
+<%= f.text_field :item %><br/>
+<%= collection_select(:order, :cust_id, Cust.all ,:id, :name) %>
+ <%= f.submit  %>
+ <abbr title="World Health Organization">WHO</abbr>
+<button type="button" onclick="alert('Hello world!')">Click Me!</button>
+<p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+<select>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+
+<% end %>
